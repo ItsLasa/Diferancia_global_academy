@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import CourseCard from "./CourseCard";
+//import CourseCard from "./CourseCard";
 import { useNavigate } from "react-router-dom";
 
 interface SliderData {
@@ -58,7 +58,7 @@ const Slider: React.FC<SliderProps> = ({ title, data }) => {
                 key={index}
                 className="snap-start shrink-0 w-[85vw] md:w-[calc(50%-60px)]"
               >
-                <CourseCard {...item} />
+               <CourseCard {...item} />
               </div>
             ))}
           </div>

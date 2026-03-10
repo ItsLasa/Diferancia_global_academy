@@ -1,9 +1,13 @@
 import React from "react";
 
-import P1 from "../assets/images/P1.jpg";
+import P1 from "../assets/images/P1.png";
 import P2 from "../assets/images/P2.png";
 import P3 from "../assets/images/P3.png";
 import P4 from "../assets/images/P4.png";
+import P5 from "../assets/images/P5.webp";
+import P6 from "../assets/images/P6.png";
+import P7 from "../assets/images/P7.png";
+import P8 from "../assets/images/P8.png";
 
 interface Partners {
   id: number;
@@ -17,16 +21,20 @@ const PartnerSection: React.FC = () => {
     { id: 2, name: "Hotel Casamara", logo: P2 },
     { id: 3, name: "The Royal Mall", logo: P3 },
     { id: 4, name: "Royal Mansion Resort", logo: P4 },
+    { id: 5, name: "Queens-Logo", logo: P5 },
+    { id: 6, name: "The Golden Crown", logo: P6},
+    { id: 7, name: "Oak Ray Regency", logo: P7 }, 
+    { id: 8, name: "LMH", logo: P8 }, 
   ];
 
   return (
-    <section className="bg-white py-20 px-4">
-      <div className="flex items-center justify-center mb-16">
-        <div className="h-[1.5px] w-20 md:w-55 bg-black"></div>
-        <h2 className="text-4xl md:text-5xl font-bold font-serif mx-6 md:mx-10 text-[#1A233A]">
+    <section className="py-10 px-6 max-w-7xl mx-auto font-serif">
+      <div className="flex items-center justify-center gap-6 mb-12">
+        <div className="h-[1.5px] bg-black flex-1 max-w-[200px]"></div>
+        <h2 className="text-4xl md:text-5xl font-bold text-[#1A233A] whitespace-nowrap">
           Our Partners
         </h2>
-        <div className="h-[1.5px] w-20 md:w-64 bg-black"></div>
+        <div className="h-[1.5px] bg-black flex-1 max-w-[200px]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto">
@@ -34,7 +42,7 @@ const PartnerSection: React.FC = () => {
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="grayscale hover:grayscale-0 transition-all duration-300"
+              className="filter grayscale hover:grayscale-0 transition-all duration-300"
             >
               <img
                 src={partner.logo}
