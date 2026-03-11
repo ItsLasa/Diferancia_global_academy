@@ -43,11 +43,7 @@ const Footer: React.FC = () => {
               <FaLinkedin size={22} />
             </a>
             <a
-<<<<<<< HEAD
               href="https://wa.me/94773640718"
-=======
-              href="https://wa.me"
->>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-500 transition-colors"
@@ -55,11 +51,7 @@ const Footer: React.FC = () => {
               <FaWhatsapp size={22} />
             </a>
             <a
-<<<<<<< HEAD
               href="https://www.facebook.com/profile.php?id=61575712164693"
-=======
-              href="https://facebook.com"
->>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition-colors"
