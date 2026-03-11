@@ -8,7 +8,7 @@ const Gallery = () => {
 
   return (
     <main>
-      {/* Page Title */}
+      
       <PageTitle title="Gallery - Diferancia Global Academy" />
 
       <Header
