@@ -15,6 +15,7 @@ import E3 from "../assets/images/E3.jpg";
 
 const CertificateCourse: React.FC = () => {
   const hotelCourses = [
+<<<<<<< HEAD
     // {
     //   title: "Certificate in Housekeeping Operations",
     //   image: C1,
@@ -323,10 +324,42 @@ const CertificateCourse: React.FC = () => {
           ],
         },
       ],
+=======
+    { 
+      title: "Certificate in Housekeeping Operations",
+      image: C1,
+      description: "Professional housekeeping training for clean, safe, and efficient environments."
+    },
+    { 
+      title: "Certificate in Cooking",
+      image: C2,
+      description: "Learn cooking techniques with professional cleaning and maintenance for safe, efficient spaces."
+    },
+    { 
+      title: "Certificate in Food & Beverage",
+      image: C3,
+      description: "Gain practical knowledge in restaurant service, customer handling, table setup, and beverage management."
+    },
+    { 
+      title: "Certificate in Front Office Management",
+      image: C4,
+      description: "Learn reception operations, guest service management, reservations handling, and communication skills."
+    },
+    { 
+      title: "Certificate in Pastry & Bakery",
+      image: C5,
+      description: "Master baking techniques, pastry production, cake decoration, and dessert presentation."
+    },
+    { 
+      title: "Certificate in Hotel & Tourism Management",
+      image: C6,
+      description: "Build leadership, hospitality operations, and customer service skills for a successful hotel career."
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
     },
   ];
 
   const educationCourses = [
+<<<<<<< HEAD
     // {
     //   title: "Certificate in English",
     //   image: E1,
@@ -448,6 +481,22 @@ const CertificateCourse: React.FC = () => {
       image: E3,
       description:
         "Understand human behavior, mental processes, and practical applications in everyday life.",
+=======
+    { 
+      title: "Certificate in English",
+      image: E1,
+      description: "Improve speaking, writing, reading, and listening skills for academic and professional success."
+    },
+    { 
+      title: "Certificate in Information Technology",
+      image: E2,
+      description: "Learn computer fundamentals, MS Office, internet usage, and basic programming concepts."
+    },
+    { 
+      title: "Certificate in Psychology",
+      image: E3,
+      description: "Understand human behavior, mental processes, and practical applications in everyday life."
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
     },
   ];
 
@@ -474,6 +523,10 @@ const CertificateCourse: React.FC = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
           {/* HOTEL COURSES */}
           <h3 className="text-base sm:text-lg font-bold border-b border-black w-fit mb-8">
             Hotel and Tourism Management
@@ -538,16 +591,31 @@ const CertificateCourse: React.FC = () => {
                 </div>
               ))}
             </div>
+<<<<<<< HEAD
             <div className="flex justify-center mt-8 sm:mt-10">
               <button className="bg-[#1a233a] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md font-semibold text-sm sm:text-base">
                 More
               </button>
             </div>
           </div>
+=======
+          <div className="flex justify-center mt-8 sm:mt-10">
+            <button className="bg-[#1a233a] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md font-semibold text-sm sm:text-base">
+              More
+            </button>
+          </div>
+
+          </div>
+
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
         </div>
       </section>
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default CertificateCourse;
+=======
+export default CertificateCourse;
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08

@@ -10,13 +10,17 @@ import Navbar from "./navigation/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
+<<<<<<< HEAD
 import { FaWhatsapp } from "react-icons/fa"; // whatsapp icon
 
+=======
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
 function App() {
   return (
     <Router>
       <div className="font-sans text-gray-900 bg-white">
         <Navbar />
+<<<<<<< HEAD
         {/* Floating Whatsapp Icon */}
         <div className="fixed bottom-6 right-6 z-50">
           <a
@@ -31,6 +35,10 @@ function App() {
         </div>
         <main>
           <ScrollToTop />
+=======
+        <main>
+          <ScrollToTop/>
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
