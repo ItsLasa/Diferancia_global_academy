@@ -15,6 +15,316 @@ import E3 from "../assets/images/E3.jpg";
 
 const CertificateCourse: React.FC = () => {
   const hotelCourses = [
+<<<<<<< HEAD
+    // {
+    //   title: "Certificate in Housekeeping Operations",
+    //   image: C1,
+    //   description:
+    //     "Professional housekeeping training for clean, safe, and efficient environments.",
+    // },
+
+    {
+      title: "Certificate in Housekeeping Operations",
+      image: C1,
+      detailImage: Header7,
+      description:
+        "Professional housekeeping training for clean, safe, and efficient environments.",
+
+      offeredBy: "Diferancia Global Academy – Hotel School",
+      introduction:
+        "Diferancia Global Academy is one of Sri Lanka’s leading institutions in professional and vocational education, providing industry-focused training programs designed to prepare students for careers in the hospitality industry.",
+
+      duration: "5 Days (Intensive Training)",
+      certification: "Locally and Internationally Recognized Certificate",
+
+      jobOpportunities: [
+        "Recommended for training positions in star-class hotels",
+        "Training allowance provided during placement",
+        "Room Attendant roles in International Hotels",
+        "Public Area Supervisor opportunities",
+      ],
+
+      benefits: [
+        "Industry-focused practical training",
+        "Guidance from hospitality professionals",
+        "Pathway to star-class hotel careers",
+        "International recognition for the certificate",
+      ],
+
+      content: [
+        {
+          category: "Foundations of Housekeeping",
+          topics: [
+            "Job Description of a Room Attendant",
+            "Organizational Structure of the Housekeeping Department",
+            "Importance of the Housekeeping Department",
+            "Types of Guest Rooms",
+            "Housekeeper’s Reports",
+          ],
+        },
+        {
+          category: "Cleaning & Maintenance Procedures",
+          topics: [
+            "Standard Cleaning and Servicing Procedures",
+            "Cleaning Equipment and Proper Usage",
+            "Cleaning Public Areas and Back-of-House Areas",
+            "Cleaning Front-of-House Areas",
+          ],
+        },
+        {
+          category: "Safety & Professional Standards",
+          topics: [
+            "Safety Rules for Guest Rooms",
+            "Safety Protocols for Housekeeping Areas",
+            "Professionalism in Guest Interaction",
+            "Hygiene and Sanitation Standards",
+          ],
+        },
+      ],
+    },
+    // {
+    //   title: "Basic Certificate in Professional Cookery",
+    //   image: C2,
+    //   description:
+    //     "Learn cooking techniques with professional cleaning and maintenance for safe, efficient spaces.",
+    // },
+    {
+      title: "Basic Certificate in Professional Cookery",
+      image: C2,
+      detailImage: C2,
+      description:
+        "Learn cooking techniques with professional cleaning and maintenance for safe, efficient spaces.",
+
+      offeredBy: "Diferancia Global Academy – Hotel School",
+      introduction:
+        "Diferancia Global Academy is one of Sri Lanka’s leading institutions in professional and vocational education, offering industry-focused training programs designed for students who wish to build a career in the culinary and hospitality industry.",
+
+      duration: "10 Days (08 Hours per Day)",
+      certification: "Basic Certificate in Professional Cookery",
+
+      jobOpportunities: [
+        "Commis Chef",
+        "Kitchen Assistant",
+        "Hotel Kitchen Trainee",
+        "Restaurant Cook",
+      ],
+
+      benefits: [
+        "Fundamental knowledge of professional kitchen operations",
+        "Practical skills in food preparation techniques",
+        "Training on international culinary basics",
+        "Mastering professional cooking methods for hotels & restaurants",
+      ],
+
+      content: [
+        {
+          category: "Introduction and Food Safety",
+          topics: [
+            "Introduction to Professional Cookery",
+            "Food Poisoning and Causes",
+            "Methods of Food Contamination",
+            "Personal Hygiene in the Kitchen",
+            "Proper Food Handling Practices",
+            "Kitchen Hygiene and Safety",
+            "Pest and Animal Control in Food Areas",
+            "Cleaning and Sanitation Procedures",
+            "Areas Requiring Disinfection",
+            "Introduction to Kitchen Equipment and Utensils",
+            "High-Risk Foods and Food Safety Measures",
+            "Food Receiving and Distribution Areas",
+          ],
+        },
+        {
+          category: "Food Categories",
+          topics: ["Meat", "Poultry", "Game", "Frozen Foods", "Dry Foods"],
+        },
+        {
+          category: "Ingredients and Flavouring",
+          topics: [
+            "Ingredients Used in Food Preparation",
+            "Types of Herbs",
+            "Factors Affecting Food Taste",
+            "Medicinal Plants Used in Cooking",
+            "Types of Spices",
+            "South and Southeast Asian Spices",
+            "Types of Seasonings",
+            "Food Colourings, Flavours, and Essences",
+          ],
+        },
+        {
+          category: "International Culinary Basics",
+          topics: [
+            "International Cuisine and Its History",
+            "Fish Stock (Fumet de Poisson)",
+            "Glaze",
+            "Roux",
+            "Other Thickening Agents for Sauces",
+            "Types of Sauces",
+          ],
+        },
+        {
+          category: "Food Preparation Skills",
+          topics: [
+            "Fish, Chicken, and Beef Cutting Techniques",
+            "Veal, Lamb, and Pork Cutting Techniques",
+            "Egg-Based Dishes",
+            "Potato Preparation Techniques",
+          ],
+        },
+        {
+          category: "Menu Planning",
+          topics: [
+            "Four Course Menu Preparation (Indian, Italian, French, Sri Lankan)",
+            "Western and Sri Lankan Breakfast Menu Preparation",
+          ],
+        },
+      ],
+    },
+    // {
+    //   title: "Certificate in Food & Beverage",
+    //   image: C3,
+    //   description:
+    //     "Gain practical knowledge in restaurant service, customer handling, table setup, and beverage management.",
+    // },
+    {
+      title: "Certificate in Food & Beverage",
+      image: C3,
+      detailImage: C3,
+      description:
+        "Gain practical knowledge in restaurant service, customer handling, table setup, and beverage management.",
+
+      offeredBy: "Diferancia Global Academy – Hotel School",
+      introduction:
+        "Diferancia Global Academy is one of Sri Lanka’s leading institutions in professional and vocational education, offering industry-focused training programs designed to prepare students for careers in the hospitality industry.",
+
+      duration: "6 Days (Intensive Practical Training)",
+      certification: "Locally and Internationally Recognized Certificate",
+
+      jobOpportunities: [
+        "Recommended for training positions in star-class hotels",
+        "Training allowance provided during the placement",
+        "F&B Service Associate in Hotels & Restaurants",
+        "Banquet Service Staff",
+        "Restaurant Steward",
+      ],
+
+      benefits: [
+        "Comprehensive practical training in F&B operations",
+        "Industry-recognized certification for global careers",
+        "Direct recommendations to star-class hotels",
+        "Mastering professional table setup and guest service",
+      ],
+
+      content: [
+        {
+          category: "Service Operations & Guest Handling",
+          topics: [
+            "Introduction to Food and Beverage Service",
+            "Taking Food Orders & Serving Food",
+            "Offering and Serving Beverages & Appetizers",
+            "Clearing Plates and Glassware",
+            "Suggesting Desserts and After-Dinner Drinks",
+          ],
+        },
+        {
+          category: "Table Setup & Service Styles",
+          topics: [
+            "Professional Table Setup Techniques",
+            "Breakfast Setup & Dinner Setup",
+            "Plated Service Standards",
+            "American Service Style",
+            "Gueridon Service (Table-side Service)",
+          ],
+        },
+        {
+          category: "Beverage Knowledge & Management",
+          topics: [
+            "Classification of Beverages",
+            "Classification of Alcoholic Beverages",
+            "Global Wine Producers by Country",
+            "Types of Wine Glasses",
+            "Constituents and Liqueurs",
+            "Categories of Liqueurs",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Certificate in Front Office Management",
+      image: C4,
+      description:
+        "Learn reception operations, guest service management, reservations handling, and communication skills.",
+    },
+    {
+      title: "Certificate in Pastry & Bakery",
+      image: C5,
+      description:
+        "Master baking techniques, pastry production, cake decoration, and dessert presentation.",
+    },
+    // {
+    //   title: "Certificate in Hotel & Tourism Management",
+    //   image: C6,
+    //   description:
+    //     "Build leadership, hospitality operations, and customer service skills for a successful hotel career.",
+    // },
+    {
+      title: "Certificate in Hotel & Tourism Management",
+      image: C6,
+      detailImage: C6,
+      description:
+        "Build leadership, hospitality operations, and customer service skills for a successful hotel career.",
+
+      offeredBy: "Diferancia Global Academy – Hotel School",
+      introduction:
+        "Diferancia Global Academy is one of Sri Lanka’s leading institutions in professional and vocational education, providing industry-focused training programs designed to prepare students for careers in the hotel, tourism, and hospitality industry.",
+
+      duration: "Foundation Program",
+      certification:
+        "Recognized Certificate in Hotel, Tourism & Hospitality Management",
+
+      jobOpportunities: [
+        "Entry-level positions in Star Class Hotels",
+        "Front Office Assistant",
+        "Guest Relations Trainee",
+        "Tourism Industry Coordinator",
+        "Hospitality Management Trainee",
+      ],
+
+      benefits: [
+        "Comprehensive foundation in hotel operations",
+        "Preparation for further professional studies",
+        "Development of professional grooming and etiquette",
+        "Gaining practical skills for the tourism sector",
+      ],
+
+      content: [
+        {
+          category: "Industry Overview & Operations",
+          topics: [
+            "Introduction to the Hospitality Industry",
+            "Hotel Operations and Management",
+            "Tourism Industry Overview",
+            "Basic Hotel Management Skills",
+          ],
+        },
+        {
+          category: "Departmental Operations",
+          topics: [
+            "Front Office Operations",
+            "Housekeeping Operations",
+            "Food and Beverage Service",
+          ],
+        },
+        {
+          category: "Professional Skills & Relations",
+          topics: [
+            "Customer Service and Guest Relations",
+            "Communication Skills for Hospitality",
+            "Professional Grooming and Etiquette",
+          ],
+        },
+      ],
+=======
     { 
       title: "Certificate in Housekeeping Operations",
       image: C1,
@@ -44,10 +354,134 @@ const CertificateCourse: React.FC = () => {
       title: "Certificate in Hotel & Tourism Management",
       image: C6,
       description: "Build leadership, hospitality operations, and customer service skills for a successful hotel career."
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
     },
   ];
 
   const educationCourses = [
+<<<<<<< HEAD
+    // {
+    //   title: "Certificate in English",
+    //   image: E1,
+    //   description:
+    //     "Improve speaking, writing, reading, and listening skills for academic and professional success.",
+    // },
+    {
+      title: "Certificate in English",
+      image: E1,
+      detailImage: E1,
+      description:
+        "Improve speaking, writing, reading, and listening skills for academic and professional success.",
+
+      offeredBy: "Diferancia Global Academy",
+      introduction:
+        "Diferancia Global Academy provides high-quality professional and language training programs designed to improve communication skills for academic, professional, and everyday use.",
+
+      duration: "Certificate Program",
+      certification: "Certificate in English Language Training",
+
+      benefits: [
+        "Improve English speaking confidence",
+        "Develop strong grammar and vocabulary skills",
+        "Enhance listening and reading abilities",
+        "Improve writing and communication skills",
+        "Practical learning experience through field visits",
+      ],
+
+      extraDetails:
+        "Field Visit Program – Students will have the opportunity to practice their English communication skills in real-life environments during our specially organized field visits.",
+
+      content: [
+        {
+          category: "Core Language Skills",
+          topics: [
+            "Speaking and Pronunciation",
+            "Listening Skills",
+            "Reading Skills",
+            "Writing Skills",
+          ],
+        },
+        {
+          category: "Language Foundations",
+          topics: [
+            "Grammar Mastery",
+            "Vocabulary Development",
+            "Sentence Structure",
+            "Confidence Building in Communication",
+          ],
+        },
+        {
+          category: "Practical Application",
+          topics: [
+            "Real-life Conversation Practice",
+            "Academic and Professional Writing",
+            "Field Visit Communication Exercises",
+          ],
+        },
+      ],
+    },
+    // {
+    //   title: "Certificate in Information Technology",
+    //   image: E2,
+    //   description:
+    //     "Learn computer fundamentals, MS Office, internet usage, and basic programming concepts.",
+    // },
+    {
+      title: "Certificate in Information Technology",
+      image: E2,
+      detailImage: E2,
+      description:
+        "Learn computer fundamentals, MS Office, internet usage, and basic programming concepts.",
+
+      offeredBy: "Diferancia Global Academy",
+      introduction:
+        "Diferancia Global Academy is committed to providing quality professional and vocational education, helping students develop practical skills for modern careers. This program is designed for beginners who want to build strong computer and digital communication skills required in today’s academic and professional environments.",
+
+      duration: "Certificate Program",
+      certification: "Certificate in Computer & Communication Technology",
+
+      benefits: [
+        "Improve essential computer skills",
+        "Learn widely used office software (MS Office)",
+        "Develop digital communication knowledge",
+        "Gain practical hands-on computer experience",
+        "Enhance career and education opportunities",
+      ],
+
+      content: [
+        {
+          category: "Computer Fundamentals",
+          topics: [
+            "Fundamentals of Personal Computers (PC)",
+            "Operating Systems Basics",
+            "Hardware and Software Overview",
+          ],
+        },
+        {
+          category: "Microsoft Office Suite",
+          topics: [
+            "Microsoft Word (Document Processing)",
+            "Microsoft Excel (Spreadsheets & Data)",
+            "Microsoft PowerPoint (Presentations)",
+            "Microsoft Access (Database Management Systems - DBMS)",
+          ],
+        },
+        {
+          category: "Digital Communication & Design",
+          topics: [
+            "Internet and Email Communication",
+            "Web Browsing and Online Safety",
+            "Adobe Photoshop Basics (Graphic Design)",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Certificate in Psychology",
+      image: E3,
+      description:
+        "Understand human behavior, mental processes, and practical applications in everyday life.",
+=======
     { 
       title: "Certificate in English",
       image: E1,
@@ -62,6 +496,7 @@ const CertificateCourse: React.FC = () => {
       title: "Certificate in Psychology",
       image: E3,
       description: "Understand human behavior, mental processes, and practical applications in everyday life."
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
     },
   ];
 
@@ -88,7 +523,10 @@ const CertificateCourse: React.FC = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
           {/* HOTEL COURSES */}
           <h3 className="text-base sm:text-lg font-bold border-b border-black w-fit mb-8">
             Hotel and Tourism Management
@@ -153,6 +591,14 @@ const CertificateCourse: React.FC = () => {
                 </div>
               ))}
             </div>
+<<<<<<< HEAD
+            <div className="flex justify-center mt-8 sm:mt-10">
+              <button className="bg-[#1a233a] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md font-semibold text-sm sm:text-base">
+                More
+              </button>
+            </div>
+          </div>
+=======
           <div className="flex justify-center mt-8 sm:mt-10">
             <button className="bg-[#1a233a] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-md font-semibold text-sm sm:text-base">
               More
@@ -161,10 +607,15 @@ const CertificateCourse: React.FC = () => {
 
           </div>
 
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
         </div>
       </section>
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default CertificateCourse;
+=======
+export default CertificateCourse;
+>>>>>>> 2b1a3a97cddab6f6e29bedc13faa911b288cba08
