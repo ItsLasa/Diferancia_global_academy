@@ -1,11 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import Header from "../components/Header";
 import Header4 from "../assets/images/Header4.jpg";
 import PageTitle from "../components/PageTitle";
 
+// ─── whatsapp number ───────────
+const WHATSAPP_NUMBER = "94773640718";
+// ─────────────────────────────────────────────────────────────────────────────
+
 const Contact: React.FC = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Build a pre-filled WhatsApp message
+    const text = [
+      `📋 *New Contact Message*`,
+      ``,
+      `👤 *Name:* ${firstName} ${lastName}`,
+      `📧 *Email:* ${email}`,
+      `📱 *Phone:* ${phone}`,
+      ``,
+      `💬 *Message:*`,
+      message,
+    ].join("\n");
+
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <main>
       {/* Page Title */}
@@ -23,7 +53,7 @@ const Contact: React.FC = () => {
       {/* Contact Section */}
       <section className="bg-white py-20 px-4 md:px-10 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
-          
+
           {/* Contact Form */}
           <div className="w-full lg:w-2/3 border border-gray-300 rounded-2xl p-8 md:p-12 shadow-sm">
             <h2 className="text-3xl font-bold text-[#1A233A] mb-4">
@@ -33,13 +63,16 @@ const Contact: React.FC = () => {
               Do you have a question or need assistance? Feel free to contact us.
             </p>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="font-bold text-gray-800">First Name</label>
                   <input
                     type="text"
+                    required
                     placeholder="Enter Your First Name"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                     className="border border-gray-400 rounded-lg p-3 outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                   />
                 </div>
@@ -48,7 +81,10 @@ const Contact: React.FC = () => {
                   <label className="font-bold text-gray-800">Last Name</label>
                   <input
                     type="text"
+                    required
                     placeholder="Enter Your Last Name"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                     className="border border-gray-400 rounded-lg p-3 outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                   />
                 </div>
@@ -59,7 +95,10 @@ const Contact: React.FC = () => {
                   <label className="font-bold text-gray-800">Email</label>
                   <input
                     type="email"
+                    required
                     placeholder="Enter Your Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="border border-gray-400 rounded-lg p-3 outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                   />
                 </div>
@@ -68,7 +107,10 @@ const Contact: React.FC = () => {
                   <label className="font-bold text-gray-800">Phone Number</label>
                   <input
                     type="text"
+                    required
                     placeholder="Enter Your Phone Number"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     className="border border-gray-400 rounded-lg p-3 outline-none focus:ring-2 focus:ring-orange-500 transition-all"
                   />
                 </div>
@@ -78,7 +120,10 @@ const Contact: React.FC = () => {
                 <label className="font-bold text-gray-800">Message</label>
                 <textarea
                   rows={4}
+                  required
                   placeholder="Send Your Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="border border-gray-400 rounded-lg p-3 outline-none focus:ring-2 focus:ring-orange-500 transition-all resize-none"
                 ></textarea>
               </div>
@@ -86,9 +131,10 @@ const Contact: React.FC = () => {
               <div className="flex justify-center pt-4">
                 <button
                   type="submit"
-                  className="bg-[#C17900] text-white font-bold py-3 px-12 rounded-full text-lg hover:bg-[#A66800] transition-colors shadow-md"
+                  className="bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-3 px-12 rounded-full text-lg transition-colors shadow-md flex items-center gap-3"
                 >
-                  Send a Message
+                  <FaWhatsapp size={24} />
+                  Send via WhatsApp
                 </button>
               </div>
             </form>
@@ -97,39 +143,39 @@ const Contact: React.FC = () => {
           {/* Contact Info */}
           <div className="w-full lg:w-1/3 flex flex-col gap-4 sm:gap-6">
 
-  {/* Address */}
-  <div className="border-2 sm:border-[3px] border-[#FFB84D] rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
-    <div className="bg-[#C17900] p-3 sm:p-4 rounded-lg text-white shrink-0">
-      <MapPin size={28} className="sm:w-8 sm:h-8" />
-    </div>
-    <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 leading-tight">
-      No.15/I/C, New Digana Road,<br />
-      Kundasale, Kandy
-    </p>
-  </div>
+            {/* Address */}
+            <div className="border-2 sm:border-[3px] border-[#FFB84D] rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
+              <div className="bg-[#C17900] p-3 sm:p-4 rounded-lg text-white shrink-0">
+                <MapPin size={28} className="sm:w-8 sm:h-8" />
+              </div>
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 leading-tight">
+                No.15/I/C, New Digana Road,<br />
+                Kundasale, Kandy
+              </p>
+            </div>
 
-  {/* Phone */}
-  <div className="border-2 sm:border-[3px] border-[#FFB84D] rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
-    <div className="bg-[#C17900] p-3 sm:p-4 rounded-lg text-white shrink-0">
-      <Phone size={28} className="sm:w-8 sm:h-8" />
-    </div>
-    <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 space-y-1">
-      <p>081 2267 755</p>
-      <p>077 3640 718</p>
-    </div>
-  </div>
+            {/* Phone */}
+            <div className="border-2 sm:border-[3px] border-[#FFB84D] rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
+              <div className="bg-[#C17900] p-3 sm:p-4 rounded-lg text-white shrink-0">
+                <Phone size={28} className="sm:w-8 sm:h-8" />
+              </div>
+              <div className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 space-y-1">
+                <p>081 2267 755</p>
+                <p>077 3640 718</p>
+              </div>
+            </div>
 
-  {/* Email */}
-  <div className="border-2 sm:border-[3px] border-[#FFB84D] rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
-    <div className="bg-[#C17900] p-3 sm:p-4 rounded-lg text-white shrink-0">
-      <Mail size={28} className="sm:w-8 sm:h-8" />
-    </div>
-    <p className="text-lg sm:text-xl md:text-xl font-bold text-gray-800 break-words">
-      info@diferanciaglobal.com
-    </p>
-  </div>
+            {/* Email */}
+            <div className="border-2 sm:border-[3px] border-[#FFB84D] rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-sm">
+              <div className="bg-[#C17900] p-3 sm:p-4 rounded-lg text-white shrink-0">
+                <Mail size={28} className="sm:w-8 sm:h-8" />
+              </div>
+              <p className="text-lg sm:text-xl md:text-xl font-bold text-gray-800 break-words">
+                info@diferanciaglobal.com
+              </p>
+            </div>
 
-</div>
+          </div>
 
         </div>
       </section>
